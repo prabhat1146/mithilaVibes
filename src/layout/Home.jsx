@@ -39,7 +39,7 @@ export default function HeroSection() {
         loop={true}
         cursor
         cursorStyle="|"
-        typeSpeed={120}
+        typeSpeed={140}
         deleteSpeed={120}
         delaySpeed={3000}
       />
