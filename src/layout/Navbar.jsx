@@ -53,14 +53,13 @@ export default function Navbar() {
 
             <div className="flex justify-items-center items-center">
               <Link to="/" className="text-accent font-bold text-2xl">
-                <div className="flex">
-                  <p>Mithila<span className="text-primaryLight">Vibes</span></p>
-                  
+                <div className="flex justify-center items-center">
                   <img
                     className="w-20 h-20"
                     src="../assets/logo/mithila_logo.png"
                     alt="logo"
                   />
+                  <p>Mithila<span className="text-primaryLight">Vibes</span></p>
                 </div>
               </Link>
 
