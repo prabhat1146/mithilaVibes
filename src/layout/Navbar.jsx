@@ -15,7 +15,7 @@ import {
 } from "lucide-react"; // Lucide globe icon
 
 export default function Navbar() {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation(['navbar','home','footer','sidebar']);
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -219,22 +219,22 @@ export default function Navbar() {
 
           <NavLink
             to="/pages/gallery/all"
-            label={t("gallery")}
+            label={t("footer:gallery")}
             onClick={() => setMenuOpen(false)}
           />
           <NavLink
             to="/pages/gallery/madhubani"
-            label={t("madhubani_gallery")}
+            label={t("sidebar:madhubani_gallery")}
             onClick={() => setMenuOpen(false)}
           />
           <NavLink
             to="/pages/about/mithila"
-            label={t("about_mithila")}
+            label={t("sidebar:about_mithila")}
             onClick={() => setMenuOpen(false)}
           />
           <NavLink
-            to="/pages/about"
-            label={t("about")}
+            to="/pages/about/website"
+            label={t("footer:about")}
             onClick={() => setMenuOpen(false)}
           />
           {/* <NavLink

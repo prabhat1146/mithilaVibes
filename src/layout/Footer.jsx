@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Footer() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['footer']);
   return (
     <footer className="bg-[#800000] text-[#FAF3E0] px-6 pt-10 pb-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -29,16 +29,16 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li>
               <a href="/" className="hover:text-[#FFD700]">
-                {t("home")}
+                {t("navbar:home")}
               </a>
             </li>
             <li>
-              <a href="/pages/about" className="hover:text-[#FFD700]">
+              <a href="/pages/about/website" className="hover:text-[#FFD700]">
                 {t("about")}
               </a>
             </li>
             <li>
-              <a href="/pages/gallery" className="hover:text-[#FFD700]">
+              <a href="/pages/gallery/all" className="hover:text-[#FFD700]">
                 {t("gallery")}
               </a>
             </li>

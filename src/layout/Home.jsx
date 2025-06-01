@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function HeroSection() {
-    const {t}=useTranslation();
+    const {t}=useTranslation(['home', 'navbar']);
   return (
     <section
       className="min-h-screen flex items-center justify-center px-6 py-12 bg-cover bg-center relative"
