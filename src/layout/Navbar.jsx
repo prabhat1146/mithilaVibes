@@ -53,12 +53,15 @@ export default function Navbar() {
 
             <div className="flex justify-items-center items-center">
               <Link to="/" className="text-accent font-bold text-2xl">
-                Mithila<span className="text-primaryLight">Vibes</span>
-                <img
-                  className="w-20 h-20"
-                  src="../assets/logo/mithila_logo.png"
-                  alt="logo"
-                />
+                <div className="flex">
+                  <p>Mithila<span className="text-primaryLight">Vibes</span></p>
+                  
+                  <img
+                    className="w-20 h-20"
+                    src="../assets/logo/mithila_logo.png"
+                    alt="logo"
+                  />
+                </div>
               </Link>
 
               {!menuOpen && (
@@ -208,13 +211,13 @@ export default function Navbar() {
             label={t("home")}
             onClick={() => setMenuOpen(false)}
           />
-         
+
           {/* <NavLink
             to="/pages/services"
             label={t("services")}
             onClick={() => setMenuOpen(false)}
           /> */}
-          
+
           <NavLink
             to="/pages/gallery/all"
             label={t("gallery")}
@@ -230,7 +233,7 @@ export default function Navbar() {
             label={t("about_mithila")}
             onClick={() => setMenuOpen(false)}
           />
-           <NavLink
+          <NavLink
             to="/pages/about"
             label={t("about")}
             onClick={() => setMenuOpen(false)}
@@ -254,8 +257,7 @@ function NavLink({ to, label, onClick }) {
       className="block text-lg font-semibold hover:text-accent transition-colors my-0"
     >
       <span className="flex">
-        {<Handshake className="mr-2" />}{" "}
-        {label}
+        {<Handshake className="mr-2" />} {label}
       </span>
     </Link>
   );
