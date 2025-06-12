@@ -56,7 +56,7 @@ export default function Navbar() {
                 <div className="flex justify-center items-center">
                   <img
                     className="w-20 h-20"
-                    src="../assets/logo/mithila_logo.png"
+                    src="/assets/logo/mithila-vibes-logo.jpg"
                     alt="logo"
                   />
                   <p className="mr-8">Mithila<span className="text-primaryLight">Vibes</span></p>
